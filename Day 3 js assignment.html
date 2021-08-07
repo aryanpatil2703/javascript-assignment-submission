@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM Manipulation</title>
+    <style>
+
+        p{
+            font-family: calibri;
+        }
+
+        #sec{
+            height: 200px;
+            width: 300px;
+            background-color: blue;
+            color:orange;
+        }
+
+    </style>
+</head>
+<body>
+    
+     <p class="first">Hello Everyone</p>
+
+    <p class="second">I am Aryan</p> 
+
+    <input type="text" id="sin" placeholder="Enter Name" /> <br><br>
+    
+  
+    <input type="text" id="tan" placeholder="Enter city"/><br><br>
+    
+    <button onclick="execute()">click</button>
+
+    <div id="sec">
+
+    </div>
+
+
+    <script>
+  
+  function execute(){
+
+    let name=document.querySelector("#sin").value;
+  
+    document.querySelector("#sec").innerHTML=`<h1>${name}</h1>`;
+}
+
+  function execute(){
+    
+    
+      let city=document.querySelector("#tan").value;
+   
+       document.querySelector("#sec").innerHTML=`<h2>${city}</h2>`;
+  }
+    
+  
+  
+  </script>
+</body>
+</html>
